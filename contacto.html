@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Cúbica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="contenedor principal">
+            <div class="marca">
+                <img src="img/logo.png" alt="Logo Cúbica" class="logo">
+            </div>
+            
+            <section class="banner">
+                <h1>Solicitud de Presupuesto</h1>
+                <p>Contanos sobre tu idea y la maquetamos a tu medida.</p>
+            </section>
+
+            <nav>
+                <ul id="menu">
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li>
+                        <a href="index.html#portafolio">Portafolio</a>
+                        <ul class="submenu">
+                            <li><a href="index.html#portafolio">Proyectos</a></li>
+                            <li><a href="recursos.html">Recursos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="principal-contacto">
+        <section class="tarjeta">
+            <h2>Formulario de Contacto</h2>
+            <p>Por favor, completá los campos para procesar tu requerimiento:</p>
+            
+            <form class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit" class="boton">Enviar Solicitud</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p><strong>© 2026 Cúbica. Todos los derechos reservados.</strong></p> 
+    </footer>
+
+</body>
+</html>

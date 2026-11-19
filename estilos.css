@@ -1,0 +1,374 @@
+/* reglas generales */
+html { 
+    font-size: 16px; 
+    scroll-behavior: smooth; 
+}
+
+/* cuerpo  */
+body {
+    font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+    color: #333333; 
+    background-color: #e8e8e8; 
+    line-height: 1.6; 
+    margin: 0; 
+}
+
+p { 
+    font-size: 1rem; 
+    line-height: 1.7; 
+    color: #333; 
+    text-align: justify;
+    margin: 0 0 1rem 0; 
+}
+
+/* titulkos */
+h1 { 
+    font-size: 2.2rem; 
+    line-height: 1.1; 
+    letter-spacing: 0.6px; 
+    color: #4b93da; 
+    text-shadow: 0 4px 10px rgba(11,42,74,0.08); 
+    margin: 0 auto 55px; 
+}
+
+/* subtitulos*/
+h2 { 
+    font-size: 1.6rem; 
+    line-height: 1.2; 
+    letter-spacing: 0.4px; 
+    color: #112a44; 
+    margin-bottom: 12px; 
+}
+
+/* viñeta*/
+h2::before { 
+    content: "» "; 
+    color: #ff6b6b; 
+}
+
+/* subtitulos pequeños*/
+h3, h4 { 
+    font-size: 1.15rem; 
+    line-height: 1.25; 
+    color: #17293b; 
+}
+
+/* enlace  */
+a:link { 
+    color: #0066cc; 
+    text-decoration: none; 
+}
+
+a:visited { 
+    color: #00994d;
+}
+
+a:hover { 
+    color: #2997ce; 
+    text-decoration: underline; 
+}
+
+a:focus { 
+    outline: 3px solid rgba(0, 102, 204, 0.25); 
+}
+
+a:active { 
+    color: #9b550a; 
+}
+
+
+/* contenedor principal */
+.encabezado { 
+    position: relative; 
+    background: rgba(220, 221, 220, 0.95); 
+    padding: 10px 16px; 
+    border-bottom: 1px solid rgba(17, 45, 80, 0.08); 
+}
+
+/* banner  */
+.banner {
+    padding: 20px; 
+    background-color: rgba(203, 203, 203, 0.05); 
+    text-align: center; 
+    border-bottom:#003b66 solid 0px;
+    margin-bottom: 10px; 
+    border-radius: 8px; 
+}
+
+
+/* texto del baner */
+.banner p {
+    color: #ffffff; 
+    text-align: center; 
+}
+
+.logo { 
+    width: 180px; 
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto 16px; 
+}
+
+
+/* lista menu */
+#menu { 
+    list-style: none; 
+    padding: 0; 
+    margin: 10px 0 0; 
+    display: flex; 
+    gap: 12px; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+#menu li { 
+    position: relative; 
+}
+
+/*enlaces del menú */
+#menu a { 
+    text-decoration: none; 
+    color: #ffffff; 
+    background-color: rgba(186, 67, 67, 0.1);
+    padding: 8px 30px; 
+    display: inline-block; 
+    border-radius: 8px; 
+    font-size: 0.95rem; 
+}
+
+
+#menu a:hover { 
+    background: rgba(119, 169, 246, 0.25); 
+}
+
+/* submenú */
+#menu .submenu { 
+    display: none; 
+    position: absolute; 
+    left: 0; 
+    top: 100%; 
+    background: #dddddd; 
+    border: 1px solid #ddd; 
+    min-width: 180px; 
+    z-index: 1010; 
+}
+
+
+#menu li:hover > .submenu { 
+    display: block;
+    
+}
+
+#menu .submenu li { 
+    padding: 8px 20px;
+   
+    
+}
+
+/* enlaces submenú */
+#menu .submenu a { 
+    color: #114b8a; 
+    background: none;
+    
+}
+
+/* boton encabezado */
+.boton {
+    background: #0066cc; 
+    color: #ffffff !important; 
+    padding: 10px 20px; 
+    border-radius: 6px; 
+    display: inline-block;
+    font-weight: bold; 
+}
+
+/* pie de pagina */
+footer { 
+    background: rgba(255,255,255,0.9); 
+    padding: 10px 30px; 
+    text-align: center; 
+    border-top: 1px solid #e0e0e0; 
+    margin-top: 24px; 
+}
+
+/* contenido */
+main, .principal, .principal-contacto { 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 10px 30px; 
+    box-sizing: border-box;
+ }
+
+
+.contenedor { 
+    max-width: 1300px; 
+    padding: 20px;
+    text-align: center; 
+    background-image: url('img/fondo.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    margin: 20px auto; 
+    border-radius: 16px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+}
+
+
+.cajanosotros{
+    max-width: 1300px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 12px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+/* cajas cuerpo */
+.caja-flex { 
+    
+    display:flex;
+    flex-direction: column; 
+    gap: 20px; 
+    margin: 20px auto;
+   
+}
+
+/* tarjeta */
+.caja, .tarjeta { 
+    background: #ffffff; 
+    padding: 20px; 
+    border-radius: 18px; 
+    box-shadow: 0 20px 35px rgba(17, 45, 80, 0.08); 
+}
+
+/* caja presupuesto */
+.caja-formulario-aviso {
+    text-align: center; 
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px dashed #ccc; 
+    background: #fff;
+    border-radius: 8px;
+}
+
+/* cajas grilla*/
+.grilla {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px; 
+    margin-top: 20px;
+    color: #ebecec;
+}
+
+/* bloques individuales*/
+.grilla .item { 
+    min-height: 100px; 
+    border-radius: 10px; 
+    border: #003b66 solid 1px; 
+    background: #2f5c79;
+    opacity: 0.7;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* tabla*/
+.tabla-responsiva { 
+    width: 100%; 
+    overflow-x: auto; 
+    margin: 15px 0; 
+}
+
+table { 
+    border-collapse: separate; 
+    width: 100%; 
+    border: 1px solid #0066cc; 
+    border-radius: 8px; 
+    background: #e3e3e3;
+}
+
+th, td { 
+    border: 1px solid #808080; 
+    padding: 8px; 
+}
+
+th { 
+    background-color: #0066cc; 
+    color: white; 
+}
+
+
+.formulario { 
+    width: 100%;
+    max-width: 560px; 
+    padding: 16px; 
+    margin: 12px auto; 
+    box-sizing: border-box; 
+}
+
+.formulario label { 
+    display: block; 
+    margin-top: 8px; 
+    font-weight: 600; 
+}
+
+/* formulario*/
+.formulario input, .formulario textarea { 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 6px; 
+    border: 1px solid #bbb; 
+    border-radius: 6px; 
+    box-sizing: border-box;
+}
+
+
+.formulario button { 
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #0066cc; 
+    color: #fff; 
+    border: none; 
+    font-weight: bold; 
+    border-radius: 6px; 
+}
+
+/* bloques finales*/
+@media (min-width: 992px) {
+    
+    .caja-flex { 
+        flex-direction: row; 
+        align-items: flex-start;
+    }
+    
+
+    .caja { 
+        flex: 1; 
+    }
+    
+    .tarjeta { 
+        flex: 1; /
+    }
+}
+
+/* bloques multimedia*/
+.video-responsivo {
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px; 
+}
+
+
+.video-responsivo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

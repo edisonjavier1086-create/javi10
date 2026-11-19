@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos y Referencias | Cúbica</title>
+   
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="contenedor principal">
+            <div class="marca">
+                <img src="img/logo.png" alt="Logo Cúbica" class="logo">
+            </div>
+            
+            <section class="banner">
+                <h1>Recursos y Referencias</h1>
+                <p>Biblioteca de documentación técnica y enlaces de interés.</p>
+            </section>
+
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li>
+                        <a href="index.html#portafolio">Portafolio</a>
+                        <ul class="submenu">
+                            <li><a href="index.html#portafolio">Proyectos</a></li>
+                            <li><a href="recursos.html">Recursos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="principal" style="padding: 40px 16px;">
+        
+       
+        <section class="caja">
+            <h2>Material de Consulta</h2>
+            <p>
+                Maquetar interfaces accesibles requiere basarse en estándares internacionales. 
+                A continuación, compartimos los recursos fundamentales que aplicamos en nuestros desarrollos.
+            </p>
+
+            <div class="caja-flex" style="margin-top: 24px;">
+                <article class="tarjeta" style="flex: 1;">
+                    <h3>Leyes de la Gestalt</h3>
+                    <p>Documentación detallada sobre cómo la psicología de la percepción afecta la disposición de elementos en pantallas y flujos de usuario.</p>
+                    <a href="https://www.interaction-design.org" target="_blank" rel="noopener">Leer más sobre Gestalt »</a>
+                </article>
+
+                <article class="tarjeta" style="flex: 1;">
+                    <h3>Accesibilidad Web (WCAG)</h3>
+                    <p>Guías oficiales para asegurar que los componentes de maquetación, contrastes de color y textos sean legibles para cualquier usuario.</p>
+                    <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener">Ver pautas de la W3C »</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="multimedia-recursos" style="margin-top: 30px;">
+            <h2>Material Multimedia de Apoyo</h2>
+            <p>Revisá estos contenidos audiovisuales para complementar el estudio de las interfaces y el diseño web:</p>
+            
+            <div class="caja-flex">
+                
+                <div class="caja">
+                    <h3>Video Institucional (Local)</h3>
+                    <p>Presentación interna de nuestro espacio de trabajo y metodologías de interfaz.</p>
+                    <video controls width="100%" poster=img/logo.png>
+                        <source src="video/presentacion.mp4" type="video/mp4">
+                        <source src="video/presentacion.webm" type="video/webm">
+                        Tu navegador no soporta la reproducción de video HTML5.
+                    </video>
+                </div>
+
+               
+                <div class="caja">
+                    <h3>¿Qué es el Diseño Responsive? (Externo)</h3>
+                    <p>Un repaso interactivo por los conceptos clave de la comunicación visual en la Web.</p>
+                    <div class="video-responsivo">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2zypRlzIcHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="tarjeta" style="margin-top: 20px; text-align: center;">
+                <h3>Podcast Cúbica: Entrevista sobre Leyes de la Gestalt</h3>
+                <p>Escuchá a nuestros especialistas analizar el impacto de la proximidad y la semejanza en las interfaces actuales.</p>
+                <audio controls style="width: 100%; max-width: 400px; margin: 10px auto 0; display: block;">
+                    <source src="" type="">
+                    <source src="" type="">
+                    Tu navegador no soporta la reproducción de audio HTML5.
+                </audio>
+            </div>
+        </section>
+
+       
+        <section class="caja" style="margin-top: 30px;">
+            <h2>Enlaces de Interés Rápidos</h2>
+            <ul>
+                <li><a href="index.html#portafolio">Ver nuestro portafolio de proyectos</a></li>
+                <li><a href="contacto.html">Solicitar presupuesto personalizado</a></li>
+            </ul>
+        </section>
+    </main>
+
+    
+    <footer class="pie">
+        <p><strong>© 2026 Cúbica. Todos los derechos reservados.</strong></p> 
+        <a href="index.html">Volver al Inicio</a>
+    </footer>
+
+</body>
+</html>
